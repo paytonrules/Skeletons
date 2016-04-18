@@ -1,0 +1,10 @@
+{
+  "src_files": [
+    "app/specs/**/*.js"
+  ],
+  "framework": "jasmine2",
+  "test_page": "tests.mustache",
+  "launch_in_ci": [
+    "PhantomJS"
+  ]
+}

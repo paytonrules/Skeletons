@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>Test'em</title>
+  <script src="/jspm_packages/system.js"></script>
+  <script src="/config.js"></script>
+  <script src="/testem/jasmine2.js"></script>
+  <script src="/testem/jasmine2-html.js"></script>
+  <script src="/testem/jasmine2-boot.js"></script>
+  <script src="/testem.js"></script>
+  <script>
+    var jasmineOnload = window.onload;
+    window.onload = function() {
+      Promise.all([
+        {{#serve_files}}
+          System.import("{{{src}}}"),
+        {{/serve_files}}
+      ]).then(jasmineOnload);
+    };
+  </script>
+
+  <link rel="stylesheet" href="/testem/jasmine2.css">
+</head>
+<body>
+  <div id="jasmine_content"></div>
+</body>
+</html>

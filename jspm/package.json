@@ -1,0 +1,29 @@
+{
+  "name": "easel_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "jspm": "^0.16.33",
+    "jspm-bower-endpoint": "^0.3.2"
+  },
+  "jspm": {
+    "dependencies": {
+      "chai": "npm:chai@^3.5.0",
+      "easeljs": "bower:easeljs@^0.8.2",
+      "mocha": "npm:mocha@^2.4.5"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
