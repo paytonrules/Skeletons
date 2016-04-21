@@ -1,2 +1,20 @@
 #!/bin/bash
 
+echo "Setting up a new, awesome project"
+
+Project=$1
+Destination=$2
+CurrentDirectory=`pwd`
+PathToProject="$CurrentDirectory/$Project"
+
+cp -r $Project $Destination
+
+pushd $Destination
+
+source "$PathToProject/setup.sh"
+
+rm setup.sh
+
+popd
+
+echo "Complete!"
