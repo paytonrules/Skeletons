@@ -6,6 +6,8 @@ To install Node: `brew install node`.
 
 To install JSPM: `npm install jspm -g`
 
+To Install PhantomJS: Go to their website. They change their mind a lot.
+
 # Running the App
 
 ```

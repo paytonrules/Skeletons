@@ -1,6 +1,10 @@
 {
   "src_files": [
-    "app/specs/**/*.js"
+    "specs/**/*.js"
+  ],
+  "watch_files": [
+    "specs/**/*.js",
+    "app/**/*.js"
   ],
   "framework": "jasmine2",
   "test_page": "tests.mustache",
