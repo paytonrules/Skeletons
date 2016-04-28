@@ -25,18 +25,9 @@ To run them with auto-reloading:
 ```
 npm run testem
 ```
-
-# Travis CI setup
-
-- Should work out of the box
-
 # Bundle for Production
 
-```
-jspm bundle
-```
-
-You might want to run a bundler that runs tests on bundle, a debugger for bundle, and a dist directory. Don't care yet.
+You can use the `jspm bundle` command to bundle up a production distro. I haven't put that in an npm task because I don't have a default way of working yet.
 
 # Debugging
 
