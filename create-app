@@ -6,6 +6,11 @@ Destination=$2
 SkeletonDirname=`dirname $0`
 PathToProject=$(cd $SkeletonDirname/$Project; pwd)
 
+if [ -d $Destination ]; then
+  echo "$Destination already exists. Aborting."
+  exit
+fi
+
 cp -r $PathToProject $Destination
 
 pushd $Destination
