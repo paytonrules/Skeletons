@@ -37,7 +37,7 @@ read Author
 sed -e "s/\$ProjectName/$ProjectName/g" \
 		-e "s/\$Description/$Description/g" \
     -e "s/\$Author/$Author/g" \
-		"$PathToProject/package.json" > "$Destination/package.json"
+		"$PathToProject/package.json" > "package.json"
 
 ## Run npm install
 npm install
