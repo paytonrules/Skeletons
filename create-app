@@ -1,13 +1,12 @@
 #!/bin/bash
-
 echo "Setting up a new, awesome project"
 
 Project=$1
 Destination=$2
-CurrentDirectory=`pwd`
-PathToProject="$CurrentDirectory/$Project"
+SkeletonDirname=`dirname $0`
+PathToProject=$(cd $SkeletonDirname/$Project; pwd)
 
-cp -r $Project $Destination
+cp -r $PathToProject $Destination
 
 pushd $Destination
 
