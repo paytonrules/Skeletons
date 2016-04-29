@@ -1,3 +1,7 @@
+# App
+
+This is a bare-bones JSPM skeleton.
+
 # Requirements
 
 The requirements of this are JSPM and Node. Node because it's the only way to run any JavaScript CLI tools, and JSPM because that's the preferred package manager.
