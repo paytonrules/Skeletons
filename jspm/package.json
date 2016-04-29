@@ -13,18 +13,27 @@
   "devDependencies": {
     "browser-sync": "^2.12.3",
     "jspm": "^0.16.33",
-    "jspm-bower-endpoint": "^0.3.2",
     "testem": "^1.6.0"
   },
 	"jspm": {
 		"dependencies": {
 			"css": "github:systemjs/plugin-css@^0.1.21",
-			"jasmine-core": "bower:jasmine-core@^2.4.1"
+			"jasmine": "github:jasmine/jasmine@^2.4.1"
 		},
 		"devDependencies": {
 			"babel": "npm:babel-core@^5.8.24",
 			"babel-runtime": "npm:babel-runtime@^5.8.24",
 			"core-js": "npm:core-js@^1.1.4"
-		}
-	}
+		},
+    "overrides": {
+      "github:jasmine/jasmine@2.4.1": {
+        "main": "lib/jasmine-2.4.1/jasmine",
+        "directories": {
+          "lib": "lib/jasmine-2.4.1"
+        },
+        "format": "global"
+      }
+    }
+
+  }
 }

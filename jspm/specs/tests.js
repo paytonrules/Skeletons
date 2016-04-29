@@ -1,7 +1,7 @@
-import 'jasmine-core/lib/jasmine-core/jasmine.css!';
-import jasmine from 'jasmine-core';
-import 'jasmine-core/lib/jasmine-core/jasmine-html.js';
-import 'jasmine-core/lib/jasmine-core/boot.js';
+import 'jasmine/jasmine.css!';
+import jasmine from 'jasmine';
+import 'jasmine/jasmine-html.js';
+import 'jasmine/boot';
 import '/testem';
 
 let runTests = window.onload;
