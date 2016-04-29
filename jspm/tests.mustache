@@ -12,27 +12,6 @@
     ];
     System.import('specs/tests');
   </script>
-  <!--
-     -1. See it work x
-     -2. Hard code the paths into jspm_modules (bower:jasmine-core) x
-     -3. move the testem.js to after the jasmineOnload bit x
-     -4. Try making boot a global module mapped via the meta tag that ensures jasmine is loaded. x
-     -5. Try making jasmine-html the same. x
-     -6. See if you can change it to import from jasmine in the specs. (unneeded x)
-     -7. See if you can use import on the css! (you might need the package, you do) x
-     -8. See if you can update the config, so you don't have to init it, in your batch file x (you can)
-       - Don't forget you need to use jspm for the css
-     -9. Make sure you only bring jasmine-core if that's all that's needed x
-     - Get testem ci working
-			- You'll need phantomjs
-     - Move tests to a separate directory
-     10. Create a brand new project doing the very steps
-      - New JSPM
-      - Add dependencies (browser-sync, jasmine-core, testem, jspm css, bower endpoint)
-      - Can you run all jspm tasks without the jspm cli?
-      - Make sure it's namespace (aka app) and specs at same level
-     11. Put it in skeletons
--->
 </head>
 <body>
   <div id="jasmine_content"></div>
