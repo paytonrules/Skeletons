@@ -1,5 +1,5 @@
 export default {
-  helloWorld() {
+  world() {
     console.log("hello world");
   }
 };

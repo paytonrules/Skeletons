@@ -1,3 +1,3 @@
-import App from 'app';
+import Hello from 'app/hello';
 
-App.helloWorld();
+Hello.world();

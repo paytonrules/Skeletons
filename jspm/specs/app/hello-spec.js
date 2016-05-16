@@ -1,6 +1,6 @@
-import App from "app/app";
+import Hello from "app/hello";
 
-describe("App", () => {
+describe("Hello", () => {
   it("is currently failing", () => {
     expect(true).toBe(false);
   });
