@@ -1,7 +1,7 @@
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 
-browserSync({
-  server: '.',
+browserSync.init({
+  server: true,
   files: ['*.html', 'config.js', 'app/*', 'app/**/*'],
-  serveStatic: ['app']
+  online: false
 });
